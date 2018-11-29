@@ -2,8 +2,8 @@ import operator
 
 from flask import Flask, jsonify, render_template, request
 
-from .scrappers import tahlia_scrapper as ts
-from .scrappers import weltbild_scrapper as ws
+from .scrappers.scrappers import tahlia_scrapper as ts
+from .scrappers.scrappers import weltbild_scrapper as ws
 
 app = Flask(__name__)
 app.config.from_object('bookworm.config.DevelopmentConfig')
