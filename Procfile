@@ -1,1 +1,1 @@
-web: gunicorn bookworm:run
+web: gunicorn run:app
