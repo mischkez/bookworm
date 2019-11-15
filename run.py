@@ -2,7 +2,7 @@ import operator
 
 from flask import Flask, jsonify, render_template, request
 
-from .scrappers import ThaliaScrapper, WeltbildScrapper
+from scrappers import ThaliaScrapper, WeltbildScrapper
 
 app = Flask(__name__)
 app.config.from_object('bookworm.config.DevelopmentConfig')
