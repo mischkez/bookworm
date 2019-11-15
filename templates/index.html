@@ -1,12 +1,7 @@
 {% extends 'base.html' %}
 
 {% block content %}
-  <div class="text-center" style="margin-top: 300px;">
-    <h1>BookWorm</h1>
-    <h5>Find the book you love and compare price on different sites</h5>
+  <div class="col-md-8 offset-md-2" style="margin-top:300px;">
+    {% include '_form.html' %}
   </div>
-  <form action="" class="form-inline">
-    <input name="q" type="text" class="form-control" placeholder="Title, Keyword, Author, ISBN..." style="width: 80%">
-    <button class="btn btn-primary" style="width: 20%;">Search</button>
-  </form>
 {% endblock %}
