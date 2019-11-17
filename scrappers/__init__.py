@@ -17,7 +17,6 @@ def price_format(price, for_display=False):
 class SiteScrapper:
 
     def __init__(self, url, tag, clss, format='lxml'):
-        print(url,tag,clss,format)
         self.url = url
         self.tag = tag
         self.clss = clss
